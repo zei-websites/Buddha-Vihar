@@ -220,7 +220,7 @@ const ITEMS = [
   { id: 'chinese-banana-65', name: 'Banana 65', category: 'chinese', price: 280, desc: '', img: 'Chinese/11.21.jpg', zomato: 'https://link.zomato.com/xqzv/dshare?id=142111634c38da3df', swiggy: 'https://www.swiggy.com/menu/722393?source=sharing' },
   { id: 'chinese-veg-mangoliam', name: 'Veg Mangoliam', category: 'chinese', price: 260, desc: '', img: 'Chinese/11.22.jpg', zomato: 'https://link.zomato.com/xqzv/dshare?id=142111653c38daa31', swiggy: 'https://www.swiggy.com/menu/722393?source=sharing' },
   { id: 'chinese-mushroom-canapes', name: 'Mushroom Canapes', category: 'chinese', price: 280, desc: '', img: 'Chinese/11.23.jpg', zomato: 'https://link.zomato.com/xqzv/dshare?id=142111665c38dacd0', swiggy: 'https://www.swiggy.com/menu/722393?source=sharing' },
-  { id: 'chinese-paneer-singhapuri', name: 'Paneer Singhapuri', category: 'chinese', price: 300, desc: '', img: 'Chinese/11.24.jpg', zomato: 'https://zomato.onelink.me/xqzv/i8a44abj', swiggy: 'https://www.swiggy.com/menu/722393?source=sharing' },
+  { id: 'chinese-paneer-singhapuri', name: 'Paneer Singhapuri', category: 'chinese', price: 300, desc: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQEUDcfc0cc-89edMlCjJM_CxHV1YozmPmQ9I3IOCqi8DtyJZ3wM3VmE&s=10', zomato: 'https://zomato.onelink.me/xqzv/i8a44abj', swiggy: 'https://www.swiggy.com/menu/722393?source=sharing' },
 
   // ---------------- Snacks ----------------
   { id: 'snacks-chana-bhatoora', name: 'Chana Bhatoora', category: 'snacks', price: 150, desc: '', img: 'Snacks/12.1.jpg', zomato: 'https://link.zomato.com/xqzv/dshare?id=142111690c38daf07', swiggy: 'https://www.swiggy.com/menu/722393?source=sharing' },
