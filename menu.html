@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu | Buddha Vihar — Pure Vegetarian Restaurant, Hajipur</title>
+  <meta name="description" content="Full menu at Buddha Vihar — mocktails, starters, soups, main course, breads, rice, South Indian, dosa, uttapam, Chinese, snacks and desserts. Order online on Zomato or Swiggy.">
+  <link rel="canonical" href="https://www.buddhavihar.example.com/menu.html">
+  <link rel="icon" type="image/png" href="icon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Buddha Vihar home">
+        <img src="Logo-bg.png" alt="Buddha Vihar logo" class="brand-logo">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#offerings">What We Offer</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#celebrations">Birthdays</a></li>
+          <li><a href="index.html#visit">Visit Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="table-menu.html" class="btn btn-menu"><span>Menu</span></a>
+        <div class="order-dropdown">
+          <button class="btn btn-order" id="orderToggle" aria-expanded="false" aria-controls="orderMenu">
+            Order Online
+          </button>
+          <div class="order-menu" id="orderMenu">
+            <a href="https://zomato.onelink.me/xqzv/i8a44abj" target="_blank" rel="noopener" class="order-link zomato">Order on Zomato</a>
+            <a href="https://www.swiggy.com/menu/722393?source=sharing" target="_blank" rel="noopener" class="order-link swiggy">Order on Swiggy</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-page">
+
+    <!-- ===================== MENU HERO ===================== -->
+    <div class="menu-hero">
+      <div class="container">
+        <a href="index.html" class="menu-hero-back">&larr; Back to Home</a>
+        <p class="eyebrow eyebrow-light">Pure Vegetarian &middot; Hajipur</p>
+        <h1>Our Full Menu</h1>
+        <p>Browse everything on the table, then order it in on <strong class="text-zomato">Zomato</strong> or <strong class="text-swiggy">Swiggy</strong>.</p>
+      </div>
+    </div>
+
+    <!-- ===================== CATEGORY TABS ===================== -->
+    <div class="cat-tabs-wrap">
+      <div class="container">
+        <div class="cat-tabs" id="catTabs" role="tablist" aria-label="Menu categories">
+          <button class="cat-tab active" data-cat="all" role="tab" aria-selected="true">
+            All Items <span class="cat-tab-count" id="count-all"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="mocktail" role="tab" aria-selected="false">
+            Mocktail <span class="cat-tab-count" id="count-mocktail"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="starters" role="tab" aria-selected="false">
+            Starters <span class="cat-tab-count" id="count-starters"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="soup" role="tab" aria-selected="false">
+            Soup <span class="cat-tab-count" id="count-soup"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="main" role="tab" aria-selected="false">
+            Main Course <span class="cat-tab-count" id="count-main"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="breads" role="tab" aria-selected="false">
+            Breads <span class="cat-tab-count" id="count-breads"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="rice" role="tab" aria-selected="false">
+            Rice <span class="cat-tab-count" id="count-rice"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="others" role="tab" aria-selected="false">
+            Others <span class="cat-tab-count" id="count-others"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="southindian" role="tab" aria-selected="false">
+            South Indian <span class="cat-tab-count" id="count-southindian"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="dosa" role="tab" aria-selected="false">
+            Dosa <span class="cat-tab-count" id="count-dosa"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="uttapam" role="tab" aria-selected="false">
+            Uttapam <span class="cat-tab-count" id="count-uttapam"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="chinese" role="tab" aria-selected="false">
+            Chinese <span class="cat-tab-count" id="count-chinese"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="snacks" role="tab" aria-selected="false">
+            Snacks <span class="cat-tab-count" id="count-snacks"></span>
+          </button>
+
+          <button class="cat-tab" data-cat="desserts" role="tab" aria-selected="false">
+            Desserts <span class="cat-tab-count" id="count-desserts"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== SEARCH + CONTENT ===================== -->
+    <div class="container">
+      <div class="menu-controls">
+        <div class="menu-search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" id="menuSearch" placeholder="Search the menu..." autocomplete="off">
+        </div>
+      </div>
+
+      <div id="noResults" class="no-results">
+        <div class="no-results-emoji">🔍</div>
+        <h3>Nothing found</h3>
+        <p>Try a different keyword</p>
+      </div>
+
+      <!-- ════ MOCKTAIL ════ -->
+      <section class="cat-section visible" data-section="mocktail" aria-label="Mocktail section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Mocktail</h2>
+          <span class="cat-section-count" id="section-count-mocktail"></span>
+        </div>
+        <div class="menu-grid" id="grid-mocktail"></div>
+      </section>
+
+      <!-- ════ STARTERS ════ -->
+      <section class="cat-section" data-section="starters" aria-label="Starters section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Starters</h2>
+          <span class="cat-section-count" id="section-count-starters"></span>
+        </div>
+        <div class="menu-grid" id="grid-starters"></div>
+      </section>
+
+      <!-- ════ SOUP ════ -->
+      <section class="cat-section" data-section="soup" aria-label="Soup section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Soup</h2>
+          <span class="cat-section-count" id="section-count-soup"></span>
+        </div>
+        <div class="menu-grid" id="grid-soup"></div>
+      </section>
+
+      <!-- ════ MAIN COURSE ════ -->
+      <section class="cat-section" data-section="main" aria-label="Main Course section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Main Course</h2>
+          <span class="cat-section-count" id="section-count-main"></span>
+        </div>
+        <div class="menu-grid" id="grid-main"></div>
+      </section>
+
+      <!-- ════ BREADS ════ -->
+      <section class="cat-section" data-section="breads" aria-label="Breads section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Breads</h2>
+          <span class="cat-section-count" id="section-count-breads"></span>
+        </div>
+        <div class="menu-grid" id="grid-breads"></div>
+      </section>
+
+      <!-- ════ RICE ════ -->
+      <section class="cat-section" data-section="rice" aria-label="Rice section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Rice</h2>
+          <span class="cat-section-count" id="section-count-rice"></span>
+        </div>
+        <div class="menu-grid" id="grid-rice"></div>
+      </section>
+
+      <!-- ════ OTHERS ════ -->
+      <section class="cat-section" data-section="others" aria-label="Others section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Others</h2>
+          <span class="cat-section-count" id="section-count-others"></span>
+        </div>
+        <div class="menu-grid" id="grid-others"></div>
+      </section>
+
+      <!-- ════ SOUTH INDIAN ════ -->
+      <section class="cat-section" data-section="southindian" aria-label="South Indian section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">South Indian</h2>
+          <span class="cat-section-count" id="section-count-southindian"></span>
+        </div>
+        <div class="menu-grid" id="grid-southindian"></div>
+      </section>
+
+      <!-- ════ DOSA ════ -->
+      <section class="cat-section" data-section="dosa" aria-label="Dosa section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Dosa</h2>
+          <span class="cat-section-count" id="section-count-dosa"></span>
+        </div>
+        <div class="menu-grid" id="grid-dosa"></div>
+      </section>
+
+      <!-- ════ UTTAPAM ════ -->
+      <section class="cat-section" data-section="uttapam" aria-label="Uttapam section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Uttapam</h2>
+          <span class="cat-section-count" id="section-count-uttapam"></span>
+        </div>
+        <div class="menu-grid" id="grid-uttapam"></div>
+      </section>
+
+      <!-- ════ CHINESE ════ -->
+      <section class="cat-section" data-section="chinese" aria-label="Chinese section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Chinese</h2>
+          <span class="cat-section-count" id="section-count-chinese"></span>
+        </div>
+        <div class="menu-grid" id="grid-chinese"></div>
+      </section>
+
+      <!-- ════ SNACKS ════ -->
+      <section class="cat-section" data-section="snacks" aria-label="Snacks section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Snacks</h2>
+          <span class="cat-section-count" id="section-count-snacks"></span>
+        </div>
+        <div class="menu-grid" id="grid-snacks"></div>
+      </section>
+
+      <!-- ════ DESSERTS ════ -->
+      <section class="cat-section" data-section="desserts" aria-label="Desserts section">
+        <div class="cat-section-head">
+          <h2 class="cat-section-title">Desserts</h2>
+          <span class="cat-section-count" id="section-count-desserts"></span>
+        </div>
+        <div class="menu-grid" id="grid-desserts"></div>
+      </section>
+
+    </div><!-- /container -->
+
+    <!-- ===================== ORDER CTA ===================== -->
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <p class="eyebrow eyebrow-light">Prefer delivery?</p>
+          <h2>Get this same menu at your door.</h2>
+        </div>
+        <div class="order-buttons">
+          <a href="https://zomato.onelink.me/xqzv/i8a44abj" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Order on Zomato</a>
+          <a href="https://www.swiggy.com/menu/722393?source=sharing" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Order on Swiggy</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /menu-page -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="Logo-bg.png" alt="Buddha Vihar logo" class="footer-logo">
+        <p>Pure vegetarian restaurant in Hajipur &mdash; everyday food, and a cosy corner for the odd birthday.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#offerings">What We Offer</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="menu.html">Menu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Order</h4>
+        <ul>
+          <li><a href="https://zomato.onelink.me/xqzv/i8a44abj" target="_blank" rel="noopener">Zomato</a></li>
+          <li><a href="https://www.swiggy.com/menu/722393?source=sharing" target="_blank" rel="noopener">Swiggy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="https://wa.me/919264145101" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Chat with Buddha vihar on WhatsApp">+91 9264145101</a></li>
+          <li><a href="mailto:buddhavihar101@gmail.com" class="soc" aria-label="Email Buddha vihar">buddhavihar101@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Buddha Vihar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
