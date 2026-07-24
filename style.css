@@ -166,6 +166,11 @@ p { margin: 0 0 1rem; }
   color: #FC8019;
 }
 .btn-outline-swiggy:hover { background: #FC8019; color: var(--white); }
+.btn-outline-whatsapp {
+  border: 0.1rem solid #128C7E;
+  color: #128C7E;
+}
+.btn-outline-whatsapp:hover { background: #128C7E; color: var(--white); }
 
 /* ==========================================================================
    Header
